@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#
+#SBATCH --job-name=DAR_audio_audio
+#SBATCH --account=vision
+#SBATCH --partition=svl
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=16
+#SBATCH --time 48:00:00
+#SBATCH --output=exp/logs/DAR_audio_audio_%A.out
+#SBATCH --error=exp/logs/DAR_audio_audio_%A.err
+#SBATCH --mail-user=douyiming@sjtu.edu.cn
+#SBATCH --mail-type=ALL
+
+
+######################
+# Begin work section #
+######################
+echo "SLURM_JOBID="$SLURM_JOBID
+echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
+echo "SLURM_NNODES"=$SLURM_NNODES
+echo "SLURMTMPDIR="$SLURMTMPDIR
+echo "working directory = "$SLURM_SUBMIT_DIR
+
+python main.py --model DAR --config_location ./configs/DAR.yml \
+               --epochs 20 --weight_decay 1e-4 --modality_list audio audio \
+               --exp DAR_audio_audio_real --batch_size 64 \
+               --data_location ../DATA_real --split_location ../DATA_real/split.json \
+               --num_objects 100 --eval

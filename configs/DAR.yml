@@ -1,0 +1,8 @@
+checkpoint: 
+  vision_backbone: 'exp/pretrain_resnet18/vision_backbone.pth'
+  touch_backbone: 'exp/pretrain_resnet18/touch_backbone.pth'
+  audio_backbone: 'exp/pretrain_resnet18/audio_backbone.pth'
+
+  vision_teacher_net: 'exp/pretrain_resnet18/vision_classifier.pth'
+  touch_teacher_net: 'exp/pretrain_resnet18/touch_classifier.pth'
+  audio_teacher_net: 'exp/pretrain_resnet18/audio_classifier.pth'

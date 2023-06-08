@@ -1,0 +1,4 @@
+checkpoint: 
+  vision_backbone: 'exp/pretrain_resnet50/vision_backbone.pth'
+  touch_backbone: 'exp/pretrain_resnet50/touch_backbone.pth'
+  audio_backbone: 'exp/pretrain_resnet50/audio_backbone.pth'

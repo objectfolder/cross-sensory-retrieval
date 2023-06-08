@@ -1,0 +1,4 @@
+checkpoint: 
+  vision_backbone: 'exp/pretrain/vision_backbone.pth'
+  touch_backbone: 'exp/pretrain/touch_backbone.pth'
+  audio_backbone: 'exp/pretrain/audio_backbone.pth'
