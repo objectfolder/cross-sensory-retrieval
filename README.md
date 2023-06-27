@@ -17,7 +17,6 @@ $$
 Start the training process, and test the best model on test-set after training:
 
 ```sh
-cd code
 # Train DSCMR as an example
 python main.py --model DSCMR --config_location ./configs/DSCMR.yml \
                --epochs 10 --weight_decay 1e-2 --modality_list vision touch \
@@ -27,7 +26,6 @@ python main.py --model DSCMR --config_location ./configs/DSCMR.yml \
 Evaluate the best model in *vision_audio_dscmr*:
 
 ```sh
-cd code
 # Evaluate DSCMR as an example
 python main.py --model DSCMR --config_location ./configs/DSCMR.yml \
                --modality_list vision touch \
@@ -42,13 +40,13 @@ To train and test your new model on ObjectFolder Cross-Sensory Retrieval Benchma
 1. Create new model directory
 
     ```sh
-    mkdir code/models/my_model
+    mkdir models/my_model
     ```
 
 2. Design new model
 
     ```sh
-    cd code/models/my_model
+    cd models/my_model
     touch my_model.py
     ```
 
