@@ -35,7 +35,7 @@ python main.py --model DSCMR --config_location ./configs/DSCMR.yml \
 
 #### Add your own model
 
-To train and test your new model on ObjectFolder Cross-Sensory Retrieval Benchmark, you only need to modify several files in *code/models*, you may follow these simple steps.
+To train and test your new model on ObjectFolder Cross-Sensory Retrieval Benchmark, you only need to modify several files in *models*, you may follow these simple steps.
 
 1. Create new model directory
 
@@ -52,7 +52,7 @@ To train and test your new model on ObjectFolder Cross-Sensory Retrieval Benchma
 
 3. Build the new model and its optimizer
 
-    Add the following code into *code/models/build.py*:
+    Add the following code into *models/build.py*:
 
     ```python
     elif args.model == 'my_model':
