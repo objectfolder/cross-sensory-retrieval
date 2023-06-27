@@ -254,4 +254,3 @@ In our experiments, we randomly split the objects from ObjectFolder into train/v
         <td>41.42</td>
     </tr>
 </table>
-
