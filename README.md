@@ -12,6 +12,10 @@ $$
 
 ## Usage
 
+#### Data Preparation
+
+The dataset used to train the baseline models can be downloaded from [here]([https://www.dropbox.com/scl/fo/ymd3693807jucdxj7cj1k/AMtyNZgmC1ynxFWZtVsV5gI?rlkey=hr1y85tzadepw7zb5wb9ebs0b&st=xr2keno9&dl=0](https://www.dropbox.com/scl/fo/8aus181pnr1ueiuv4jr9x/AAbHpBvpaaiuwaq4dO8hLsI?rlkey=z5atuf4urbio2c0cvx58gd9ng&st=i2q9zxdo&dl=0))
+
 #### Training & Evaluation
 
 Start the training process, and test the best model on test-set after training:
